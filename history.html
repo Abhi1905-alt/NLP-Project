@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .history-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        strong {
+            color: #333;
+        }
+
+        pre {
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 14px;
+        }
+
+        .timestamp {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Your History</h2>
+<a href="/">← Back to Generator</a><br><br>
+
+{% for item in history %}
+    <div class="history-item">
+        <strong>Prompt ({{ item.task_type }}):</strong><br>
+        {{ item.prompt }}<br><br>
+
+        <strong>Output:</strong><br>
+        <pre>{{ item.output }}</pre>
+
+        {% if item.timestamp %}
+            <div class="timestamp">Submitted on: {{ item.timestamp }}</div>
+        {% endif %}
+    </div>
+{% endfor %}
+
+</body>
+</html>
