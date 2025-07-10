@@ -1,24 +1,24 @@
 # NLP-Project
 
-📧 Email and Article Generator
-📌 Project Overview
+Email and Article Generator
+Project Overview
 The Email and Article Generator is a web-based application that automatically generates professional emails and creative articles based on user input. Built using Python Flask and NLP models from Hugging Face, the system takes a prompt and produces human-like content suitable for communication or publishing.
 
-✨ Features
+Features
 Generates emails based on user-provided context
 Creates full-length articles from short prompts
 Toggle between "Email" and "Article" modes
 Easy-to-use web interface
 Copy or reuse generated content
 
-🧰 Technologies Used
+Technologies Used
 Python 3.x
 Flask
 HTML & CSS (Bootstrap or Tailwind)
 Hugging Face Transformers (flan-t5-base)
 Jinja2 templates
 
-🔧 Installation Instructions
+Installation Instructions
 Clone the project
 bash
 git clone https://github.com/your-repo/email-article-generator.git
@@ -42,7 +42,7 @@ Open your browser and visit:
 arduino
 http://localhost:5000
 
-📁 Project Structure
+Project Structure
 cpp
 Copy
 Edit
@@ -55,17 +55,17 @@ Edit
 ├── requirements.txt
 └── README.md
 
-💡 How to Use
+How to Use
 Enter a prompt (e.g., "Requesting a leave for two days")
 Choose whether you want to generate an email or an article
 Click the Generate button
 Copy the result or edit as needed
 
-🚀 Future Enhancements
+Future Enhancements
 Add tone customization (formal, informal, friendly)
 Add user login and history tracking
 Export results as PDF or text file
 Fine-tune model for domain-specific writing
 
-📄 License
+License
 This project is open-source and available under the MIT License.
