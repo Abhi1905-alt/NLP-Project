@@ -1,4 +1,4 @@
-# NLP-Project
+# WriteWise: AI-Powered Content Generator
 
 Email and Article Generator
 Project Overview
